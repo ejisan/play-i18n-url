@@ -14,7 +14,7 @@ http://example.com/en-US
 #### Dependency
 Add those resolver and dependency to `build.sbt`:<br>
 **Currently it only supports Play Framework 2.5.x**
-```
+```scala
 // Adding resolver
 resolvers += "EJISAN" at "https://ejisan.github.io/repo/"
 // Adding dependency
@@ -49,7 +49,7 @@ GET     /page1                controllers.Controller.page1
 
 ### Sird router with Non-Internationalized Routing
 Check about [sird router](https://www.playframework.com/documentation/2.5.x/ScalaSirdRouter)
-```
+```scala
 import javax.inject.Inject
 import play.api.http.{ HttpErrorHandler, HttpConfiguration }
 import play.api.i18n.DefaultLangs
